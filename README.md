@@ -1,2 +1,104 @@
 # Test-site
 New to programming,This is my website I play around with :)
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body id="page-colour" class="page-color">
+<div id="page-wrap">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style> 
+  .pag-color{
+  	background: linear-gradient(90deg,#CCFFFF,#FFCCCC);
+  }
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+    font-size: 100px;
+    transform: skewX(35deg);
+    transform: skewY(53215deg);
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .circle-image {
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 150px;
+  }
+
+  #page-wrap {
+  	width: 800px;
+  	margin: 0 auto;
+  }
+
+  #page-colour {
+    animation-name: rainbow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: #CCFFFF
+    }
+
+    50% {
+      background-color: #CCFFFF
+    }
+
+    100% {
+      background-color: #FFCCCC
+    }
+
+}
+
+</style>
+
+<h2 class="red-text" align="center">Test</h2>
+<hr>
+<main>
+  <p class="red-text">Click here to view more <a href="https://placekitten.com/">cat photos</a>.</p>
+
+  <a href="https://placekitten.com/"><img class="circle-image , smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <div>
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+
+  <form action="/submit-cat-photo" id="cat-photo-form">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="Submit a cat photo" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+</div>
+</body>
+</html>
